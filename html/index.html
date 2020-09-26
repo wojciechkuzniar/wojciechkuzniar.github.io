@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- komentarz - widoczny z dev tools, niewidoczny na stronie skrót ctrl + / -->
+    <!-- link zewnętrzny -->
+    <!-- target -opisuje nam jak sie ma otworzyc link (nowa karta, okno) -->
+    <a href="https://google.com" target="blank">google</a>
+    <!-- linki relatywne -->
+    <a href="/kontakt.html">link 2</a>
+<!-- link do wysyłania poczty -->
+    <a href="mailto:wojciech.kuzniar@gmail.com">wojciech.kuzniar@gmail.com</a>
+    <!-- link do telefonowania  -->
+    <a href="tel:+48662203715">662203715</a>
+    <!-- kotwice -linki, które prowadza od elementu posiadajacego okreslone id -->
+
+    <div class="cennik">
+        <!-- zanzczamy pojawienie sie tabeli
+        table -->
+        <table>
+            <!-- nagłowek tabeli -->
+            <thead>
+                <!-- wiersz tabeli 
+             -->
+             <tr>
+                 <!-- kolumna tabeli -->
+                 <th>produkt</th>
+                 <th>cena</th>
+             </tr>
+            </thead>
+            <tbody>
+                <!-- wiersz tabeli tr -->
+                <tr>
+<!-- kolumna tabeli td  -->
+<td>jabłko</td>
+<td>2,49</td>
+                </tr>
+                <tr>
+                    <!-- kolumna tabeli td  -->
+                    <td>jabłko</td>
+                    <td>2,49</td>
+                                    </tr>
+            </tbody>
+        </table>
+        <!-- formularz  -->
+        <!-- action skrypt - ktory robi cos z danymi wpisanymi przez użytkownika  -->
+       <!-- method w jaki sposob dane sa wysyłane  -->
+
+        <form action="https://formspree.io/wojciech.kuzniar@gmail.com" method="POST">
+            <!-- label- spina input z tekstem  -->
+            <label for="name">Imię</label>
+            <input type="text" name="name" id="name" placeholder="Wprowadż imię">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id=email >
+            <label for="number">Wpisz swój numer</label>
+            <input type="number" name="number" id="number">
+            <!-- Aby zgrupować ze soba inputy radio musza miec tak sama wartosc atrybutu name sam name  -->
+            <input type="checkbox" name="agreement" id="agreement"><label for="agreement">Wyrażam zgodę na..</label>
+            <p>wybierz płeć</p>
+           <label><input type="radio" name='sex'>Mężczyzna</label>
+            <label><input type="radio" name='sex'>Kobieta</label>
+            <label for="msg">Wiadomość</label>
+            <textarea maxlength= "255"name="msg" id="msg"></textarea>
+<label for="city">Wybierz miasto</label>
+            <select name="city" id="city">
+            <option value="cracow">Kraków</option>
+            <option value="warsaw">Warszawa</option>
+            <option value="poznan">Poznań</option>
+            </select>
+            <input type="submit" value="Napisz do  mnie">
+        </form>
+    </div>
+    <footer id="contact">
+        <address> WK <br>
+        ma <br>
+    </address>
+    </footer>
+</body>
+</html>
