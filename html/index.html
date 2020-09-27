@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- komentarz - widoczny z dev tools, niewidoczny na stronie skrót ctrl + / -->
     <!-- link zewnętrzny -->
@@ -12,7 +14,7 @@
     <a href="https://google.com" target="blank">google</a>
     <!-- linki relatywne -->
     <a href="/kontakt.html">link 2</a>
-<!-- link do wysyłania poczty -->
+    <!-- link do wysyłania poczty -->
     <a href="mailto:wojciech.kuzniar@gmail.com">wojciech.kuzniar@gmail.com</a>
     <!-- link do telefonowania  -->
     <a href="tel:+48662203715">662203715</a>
@@ -26,58 +28,70 @@
             <thead>
                 <!-- wiersz tabeli 
              -->
-             <tr>
-                 <!-- kolumna tabeli -->
-                 <th>produkt</th>
-                 <th>cena</th>
-             </tr>
+                <tr>
+                    <!-- kolumna tabeli -->
+                    <th>produkt</th>
+                    <th>cena</th>
+                </tr>
             </thead>
             <tbody>
                 <!-- wiersz tabeli tr -->
                 <tr>
-<!-- kolumna tabeli td  -->
-<td>jabłko</td>
-<td>2,49</td>
+                    <!-- kolumna tabeli td  -->
+                    <td>jabłko</td>
+                    <td>2,49</td>
                 </tr>
                 <tr>
                     <!-- kolumna tabeli td  -->
                     <td>jabłko</td>
                     <td>2,49</td>
-                                    </tr>
+                </tr>
             </tbody>
         </table>
         <!-- formularz  -->
         <!-- action skrypt - ktory robi cos z danymi wpisanymi przez użytkownika  -->
-       <!-- method w jaki sposob dane sa wysyłane  -->
+        <!-- method w jaki sposob dane sa wysyłane  -->
 
         <form action="https://formspree.io/wojciech.kuzniar@gmail.com" method="POST">
             <!-- label- spina input z tekstem  -->
             <label for="name">Imię</label>
             <input type="text" name="name" id="name" placeholder="Wprowadż imię">
             <label for="email">E-mail</label>
-            <input type="email" name="email" id=email >
+            <input type="email" name="email" id=email>
             <label for="number">Wpisz swój numer</label>
             <input type="number" name="number" id="number">
             <!-- Aby zgrupować ze soba inputy radio musza miec tak sama wartosc atrybutu name sam name  -->
             <input type="checkbox" name="agreement" id="agreement"><label for="agreement">Wyrażam zgodę na..</label>
             <p>wybierz płeć</p>
-           <label><input type="radio" name='sex'>Mężczyzna</label>
+            <label><input type="radio" name='sex'>Mężczyzna</label>
             <label><input type="radio" name='sex'>Kobieta</label>
             <label for="msg">Wiadomość</label>
-            <textarea maxlength= "255"name="msg" id="msg"></textarea>
-<label for="city">Wybierz miasto</label>
+            <textarea maxlength="255" name="msg" id="msg"></textarea>
+            <label for="city">Wybierz miasto</label>
             <select name="city" id="city">
-            <option value="cracow">Kraków</option>
-            <option value="warsaw">Warszawa</option>
-            <option value="poznan">Poznań</option>
+                <option value="cracow">Kraków</option>
+                <option value="warsaw">Warszawa</option>
+                <option value="poznan">Poznań</option>
             </select>
             <input type="submit" value="Napisz do  mnie">
         </form>
     </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.7269633548294!2d19.94284231568318!3d50.05394587942265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6acfad37c7%3A0x7b1d11b5895b499b!2sJoselewicza%202%2C%2031-051%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1601129396378!5m2!1spl!2spl"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">"
+        frameborder="0"></iframe>
+    <svg style="height: 100px;">
+        <path d="M30.148 5.588c-2.934-3.42-7.288-5.588-12.148-5.588-8.837 0-16 7.163-16
+        16s7.163 16 16 16c4.86 0 9.213-2.167 12.148-5.588l-10.148-10.412 10.148-
+        10.412zM22 3.769c1.232 0 2.231 0.999 2.231 2.231s-0.999 2.231-2.231 2.231-2.231-
+        0.999-2.231-2.231c0-1.232 0.999-2.231 2.231-2.231z"></path>
+    </svg>
+
     <footer id="contact">
         <address> WK <br>
-        ma <br>
-    </address>
+            ma <br>
+        </address>
     </footer>
 </body>
+
 </html>

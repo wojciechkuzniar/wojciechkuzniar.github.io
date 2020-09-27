@@ -1,0 +1,55 @@
+/* selektor uniwerslany * */
+* {
+    color:red
+}
+/* selektor znacznik */
+p{
+    color:green
+}
+/* selektor klasy */
+.selectors {
+    background-color: yellow;
+}
+/* selektor indentyfikatora - jeden */
+#main-title {
+    font-size: 40px;
+}
+/* selektor łączony */
+div.child {
+    background-color: blue;
+}
+/* selektor potomka */
+.child p {
+font-size: 20px;
+}
+/* selektor bezpośredniego potomka  */
+.child > p {
+    font-size: 30px;
+
+}
+/* selektor rodzeństwa */
+.child ~.sibling {
+    background-color: blueviolet;
+}
+/* selektor bezpośredniego rodzeństwa  */
+.child + .sibling {
+    background-color: paleturquoise;
+}
+/* pseudo-elementy */
+.child p::before {
+    content: "12345";
+}
+
+.child p::after {
+    content: 'Koniec';
+}
+/* hover  */
+.hover:hover {
+    background-color: blue;
+}
+
+/* focus  */
+
+input:focus {
+    border: 3px solid grey;
+}
