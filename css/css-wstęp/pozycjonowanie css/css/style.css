@@ -1,0 +1,27 @@
+.position {
+    position: relative;
+}
+
+.position div {
+height: 200px;
+}
+.orange {
+    background-color: orange;
+    /* position relative */
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 100%;
+}
+.grey {
+    background-color: grey;
+}
+
+#main-nav {
+    /* position: fixed; */
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: green;
+}

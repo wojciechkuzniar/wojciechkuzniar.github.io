@@ -53,3 +53,46 @@ font-size: 20px;
 input:focus {
     border: 3px solid grey;
 }
+/* pierwsze - ostatnie dziecko */
+ul :first-child a {
+    color: violet;
+}
+ul :last-child a {
+color: khaki;
+}
+/* pierwszy - ostatni typu */
+ul li:first-of-type a {
+    color: blue;
+}
+ul li:nth-of-type(3n + 3) a {
+color: red;
+}
+/* elemnty, które psoiadają dany atrybut */
+[title] {
+    border: 10px solid green;
+}
+
+/* selektor atrybutu o określonej wartości  */
+[title="to jest pierwszy input"] {
+     border: 10px solid grey;
+}
+
+/* selektor atrybutu posiadający wartość */
+[title~='drugi'] {
+    border: 10px solid red;
+}
+/* selektor atrybutu posiadający grupe znaków */
+input[titile*="in"] {
+    border: 10px solid yellow;
+}
+/* selektor atrybutu zaczynąjacy się ciąghiem znaków */
+input[titile^="to"] {
+    border: 10px solid violet;
+}
+
+/* selektor atrybutu kończący się ciąghiem znaków */
+input[titile$="put"] {
+    border: 10px solid red;
+}
+
+

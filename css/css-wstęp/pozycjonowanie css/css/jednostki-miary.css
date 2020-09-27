@@ -1,0 +1,29 @@
+/* rem  */
+html {
+    font-size: 20px;
+}
+
+
+.jednostki-miary {
+    font-size: 20px;
+}
+
+.jednostki-miary div {
+background-color: orange;
+}
+
+#piksele {
+    width: 400px;
+}
+#em {
+    width: 50em;
+}
+#rem {
+    width: 20rem;
+}
+#procenty {
+    width: 50%;
+}
+#vh {
+    width: 20vh;
+}
